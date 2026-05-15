@@ -1,10 +1,6 @@
 import Image from "next/image";
-import Hello from "./components/helloWorld";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <div>
-      <Hello />
-    </div>
-  );
+  redirect("/login");
 }
